@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headef files">
+      <UniqueIdentifier>{b69cc117-f0f7-40c0-8c31-8954fc61f7b6}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{faaf8374-7f27-4f26-9347-a17762223d23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\behavior_lua.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExtendWidget.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\exwidget.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HtmlayoutWDlg.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\htmlayoutwrapper.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LuaGraphics.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LuaHtmlayoutElment.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\targetver.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdafx.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\resource.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mfc.h">
+      <Filter>Headef files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\mfc.cpp">
+      <Filter>Headef files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdafx.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LuaHtmlayoutElment.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LuaGraphics.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HtmlayoutWDlg.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

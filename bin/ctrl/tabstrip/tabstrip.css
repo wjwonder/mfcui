@@ -1,0 +1,113 @@
+  @const TB_BUTTON_BACK_NORMAL: url(theme:toolbar-button-normal) stretch;	
+  @const TB_BUTTON_BACK_HOVER: url(theme:toolbar-button-hover) stretch;
+  @const TB_BUTTON_BACK_ACTIVE: url(theme:toolbar-button-pressed) stretch;
+  @const TB_BUTTON_BACK_CHECKED: url(theme:toolbar-button-checked) stretch;
+	@const TB_BUTTON_BACK_CHECKED_HOVER: url(theme:toolbar-button-checked-hover) stretch;
+  @const TB_BUTTON_BACK_DISABLED: url(theme:toolbar-button-disabled) stretch;
+  
+  @set tab-strip
+  {
+    :root
+    {
+      font:system;
+      -prototype: TabStrip;
+      background-color: window window scrollbar scrollbar;
+      flow:horizontal;
+      border:1px solid;
+	  //border-bottom: 0px;
+      border-color:threeddarkshadow threedhighlight threedhighlight threeddarkshadow;
+      margin-bottom:1px;
+    }
+    widget.tabs // where tab's live
+    {
+      width:*;
+      height:*;
+      overflow-x: hidden;
+      padding:0 2px;
+      flow:horizontal;
+      accept-drop: selector( widget.tabs > option ); /* accept drop of tabs */ 
+      outline-color: orange; /* color of insertion marker */
+      outline-width: 4px;      
+    }
+    widget.tabs > option /* single tab */
+    {
+      display:block;
+      //width: *;
+      //min-width: min-intrinsic;
+      width: max-intrinsic;
+	  width: 140px;
+      text-align: center;      
+      height:*;
+	  max-height: 24px;
+      visibility:hidden; /* hidden by default */
+      behavior: clickable; /* will generate BUTTON_PRESS/CLICK */
+      margin:2px 0 0 0;
+      padding:2px 4px 2px 4px;
+      border-top:1px solid transparent;
+      border-left:1px solid threedhighlight;
+      border-right:1px solid threedshadow;
+	  overflow: hidden;
+      draggable: only-move;
+    }
+    widget.tabs > option:current /* current tab */
+    {
+      //font-weight:bold;
+      background-color:threedface;
+      border-top:1px solid threedhighlight;
+      border-right:1px solid threeddarkshadow;
+	  background-image: url(theme:list-view-item-selected);
+	  background-repeat: expand;
+	  background-position: 2px 2px 2px 2px;
+      margin:1px -1px -1px -1px;
+      padding:3px 5px 3px 5px; /* to compensate negative margin above */
+      position:relative; /* to draw it on top of container */
+    }
+    
+    widget.tabs > option:moving /* moving tab */
+    {
+      opacity: 0.9;
+	  //background-color: white;
+	  background-image: url(theme:list-view-item-selected);
+	  background-repeat: expand;
+	  background-position: 2px 2px 2px 2px;
+    }
+    
+    widget.tabs > option[visible]
+    {
+      visibility:visible;
+    }
+    widget.ctl /* two buttons on the right */
+    {
+      width:max-intrinsic;
+      height:*;
+      background: @TB_BUTTON_BACK_NORMAL;
+      margin:2px;
+      padding:2px;
+    }
+    widget.ctl > text /* two buttons on the right */
+    {
+      font: 10pt Marlett;
+    }
+    widget.ctl:disabled
+    {
+      color: threedface;
+      background: @TB_BUTTON_BACK_DISBALED;
+    }
+    widget.ctl:hover
+    {
+      background: @TB_BUTTON_BACK_HOVER;
+    }
+    widget.ctl:active
+    {
+      background: @TB_BUTTON_BACK_ACTIVE;
+    }
+    widget.ctl.off-strip 
+    {
+      behavior: clickable popup-menu;
+    }
+    widget.ctl.close    
+    {
+      behavior: clickable;
+    }
+  }
+ 

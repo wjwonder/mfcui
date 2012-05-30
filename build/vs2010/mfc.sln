@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mfc", "mfc.vcxproj", "{949FC1BC-912F-4374-8472-4E52606C53C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3280BA3-E995-4ED7-807E-651C7C763D42} = {D3280BA3-E995-4ED7-807E-651C7C763D42}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exctrl", "exctrl\exctrl.vcxproj", "{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libexctrl", "exctrl\libexctrl.vcxproj", "{D3280BA3-E995-4ED7-807E-651C7C763D42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release Static|Win32 = Release Static|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Debug|Win32.Build.0 = Debug|Win32
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Release Static|Win32.ActiveCfg = Release Static|Win32
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Release Static|Win32.Build.0 = Release Static|Win32
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Release|Win32.ActiveCfg = Release|Win32
+		{949FC1BC-912F-4374-8472-4E52606C53C9}.Release|Win32.Build.0 = Release|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Debug|Win32.Build.0 = Debug|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Release Static|Win32.ActiveCfg = Release|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Release Static|Win32.Build.0 = Release|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Release|Win32.ActiveCfg = Release|Win32
+		{CCF4829E-CF67-4C08-80F7-0E4B2A96C2F5}.Release|Win32.Build.0 = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Debug|Win32.ActiveCfg = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Debug|Win32.Build.0 = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Release Static|Win32.ActiveCfg = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Release Static|Win32.Build.0 = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Release|Win32.ActiveCfg = Release|Win32
+		{D3280BA3-E995-4ED7-807E-651C7C763D42}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
