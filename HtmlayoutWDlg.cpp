@@ -267,7 +267,7 @@ int CHtmlayoutWDlg::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 #define BORDER_SIZE  6
-UINT CHtmlayoutWDlg::OnNcHitTest(CPoint point)
+HITRTN CHtmlayoutWDlg::OnNcHitTest(CPoint point)
 {	
 	LRESULT nRet = CDialog::OnNcHitTest(point);
 	if(m_bDragAnywhere)

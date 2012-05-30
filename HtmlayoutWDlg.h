@@ -15,6 +15,11 @@
 #include "afxwin.h"
 #include "ExtendWidget.h"
 
+#if _MSC_VER > 1200
+#define HITRTN LRESULT
+#else
+#define HITRTN UINT
+#endif
 //将htmlayout对话框作为扩展控件使用代码
 class CHtmlayoutWDlg;
 struct HtmalyoutType : public CControlTypeT<HtmalyoutType, CHtmlayoutWDlg>
@@ -108,7 +113,7 @@ protected:
 	//{{AFX_MSG(CHtmlayoutWDlg)
 	virtual BOOL OnInitDialog();		
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);	
-	afx_msg UINT OnNcHitTest(CPoint point);
+	afx_msg HITRTN OnNcHitTest(CPoint point);
 	afx_msg void OnNcCalcSize(BOOL bCalcValidRects, NCCALCSIZE_PARAMS* lpncsp);
 	afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 	afx_msg void OnDropFiles(HDROP hDropInfo);

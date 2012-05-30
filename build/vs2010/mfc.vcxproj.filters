@@ -64,4 +64,10 @@
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\mfc.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\mfc.def" />
+  </ItemGroup>
 </Project>
