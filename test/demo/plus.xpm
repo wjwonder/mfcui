@@ -1,0 +1,32 @@
+/* XPM */
+static const char *plus_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"     9     9       16            1",
+/* colors */
+"` c #242e44",
+". c #8ea0b5",
+"# c #b7d5e4",
+"a c #dcf2fc",
+"b c #a2b8c8",
+"c c #ccd2dc",
+"d c #b8c6d4",
+"e c #f4f4f4",
+"f c #accadc",
+"g c #798fa4",
+"h c #a4b0c0",
+"i c #cde5f0",
+"j c #bcdeec",
+"k c #ecf1f6",
+"l c #acbccc",
+"m c #fcfefc",
+/* pixels */
+"mech.hcem",
+"eldikille",
+"dlaa`akld",
+".#ii`ii#.",
+"g#`````fg",
+".fjj`jjf.",
+"lbji`ijbd",
+"khb#idlhk",
+"mkd.ghdkm"
+};
